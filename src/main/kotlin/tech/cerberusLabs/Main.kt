@@ -15,8 +15,7 @@ class Main : JavaPlugin() {
 
     override fun onLoad() {
         // Plugin load logic
-        val licenseManager = LicenseManager("testProduct",true)
-        licenseManager.validate({
+        LicenseManager("testProduct",true).validate({
             println("License is valid!")
         },{
             println("Due to the license being invalid, the plugin will now disable.")
