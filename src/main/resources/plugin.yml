@@ -1,0 +1,5 @@
+name: Plugin
+main: tech.cerberusLabs.Main
+version: ${version}
+api-version: 1.19
+authors: [CerberusLabs]
