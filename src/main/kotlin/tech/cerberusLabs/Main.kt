@@ -15,16 +15,16 @@ class Main : JavaPlugin() {
 
     override fun onLoad() {
         // Plugin load logic
-        LicenseManager("testProduct",true).validate({
-            println("License is valid!")
-        },{
-            println("Due to the license being invalid, the plugin will now disable.")
-            Bukkit.getPluginManager().disablePlugin(this)
-        })
     }
 
     override fun onEnable() {
         // Plugin startup logic
+        LicenseManager("testProduct",true).validate({
+            // if the license is valid and u want to do something fancy
+        },{
+            // if the license is invalid and u want to do something fancy
+            Bukkit.getPluginManager().disablePlugin(this)
+        })
     }
 
     override fun onDisable() {
