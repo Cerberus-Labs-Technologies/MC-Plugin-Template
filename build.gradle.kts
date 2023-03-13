@@ -16,7 +16,7 @@ repositories {
 }
 
 val shadowDependencies = listOf(
-    "com.github.Cerberus-Labs-Technologies:License-Manager-Kotlin:v1.0.7"
+    "com.github.Cerberus-Labs-Technologies:License-Manager-Kotlin:v1.0.9"
 )
 
 dependencies {
